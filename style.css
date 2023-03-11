@@ -1,0 +1,41 @@
+/* .field{
+    border: 1px solid;
+} */
+
+
+/* Animation on hovering over the filed area for bat */
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: 20% 20%;
+    transition: transform 0.3s ease-in;
+    /* border: 1px solid; */
+}
+
+/* Bat default state returning animation */
+.bat{
+    transition: transform 0.3s ease-in;
+    transform-origin: 20% 20%;
+
+}
+
+
+/* Ball default styles */
+.ball{
+    height: 50px;
+    width: 50px;
+    background: tomato;
+    border-radius: 50px;
+    position: relative;
+    left: 405px;
+    top: -64px;
+    transition-delay: 0.4s;
+    /* transition: transform 0.1s ease-out; */
+}
+
+/* Animation on hovering over the filed area for ball */
+.field:hover .ball{
+    transform: translate(1200px, -160px);
+    transition: transform 1s ease-out;
+    transition-delay: 0.35s;
+
+}
